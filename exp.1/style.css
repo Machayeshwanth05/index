@@ -1,0 +1,204 @@
+
+/* =================================
+   1. BASIC PAGE SETTINGS
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: white;
+    color: black;
+}
+
+
+/* =================================
+   2. HEADER
+================================= */
+
+header {
+    border: 2px solid black;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+/* =================================
+   3. NAVIGATION BAR
+================================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    border: 2px solid black;
+    padding: 15px;
+    margin: 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* =================================
+   4. MAIN CONTAINER
+================================= */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+    margin: 10px;
+    padding: 10px;
+    align-items: start;
+}
+
+
+/* =================================
+   5. PROFILE SECTION
+================================= */
+
+.profile {
+    border: 2px solid black;
+    padding: 15px;
+    text-align: center;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+.profile h2,
+.profile h3 {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.profile p {
+    line-height: 1.5;
+}
+
+.profile ul {
+    text-align: left;
+    line-height: 2;
+}
+
+
+/* =================================
+   6. MAIN CONTENT
+================================= */
+
+main {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+main h2 {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+/* =================================
+   7. POSTS SECTION
+================================= */
+
+.posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.post {
+    border: 2px solid black;
+    padding: 15px;
+    min-height: 130px;
+}
+
+.post h3 {
+    border-bottom: 1px solid black;
+    padding-bottom: 8px;
+}
+
+.post p {
+    line-height: 1.5;
+}
+
+
+/* =================================
+   8. ABOUT SECTION
+================================= */
+
+#about {
+    border: 2px solid black;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+
+/* =================================
+   9. SIDEBAR
+================================= */
+
+.sidebar {
+    border: 2px solid black;
+    padding: 15px;
+}
+
+.sidebar h3 {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.sidebar ul {
+    line-height: 2;
+}
+
+
+/* =================================
+   10. FOOTER
+================================= */
+
+footer {
+    border: 2px solid black;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}
+
+
+/* =================================
+   11. RESPONSIVE DESIGN
+================================= */
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .posts {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+}
