@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connect With Me</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Get to Know Me</h1>
+        <p>Connect With Me - Personal Information Form</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#personal">Personal Details</a>
+        <a href="#contact">Contact</a>
+        <a href="#interests">Interests</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="form-container">
+
+            <h2>Connect With Me</h2>
+
+            <p class="intro">
+                Please fill out the form below to share
+                your details, interests and thoughts.
+            </p>
+
+            <!-- Information Form -->
+            <form action="#" method="post">
+
+                <!-- 1. Personal Details -->
+                <fieldset id="personal">
+
+                    <legend>1. Personal Details</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname"
+                           name="fullname"
+                           placeholder="Enter your full name"
+                           required>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob"
+                           name="dob" required>
+
+                    <p class="group-label">Gender:</p>
+
+                    <div class="options">
+                        <label>
+                            <input type="radio"
+                                   name="gender"
+                                   value="Male" required>
+                            Male
+                        </label>
+
+                        <label>
+                            <input type="radio"
+                                   name="gender"
+                                   value="Female">
+                            Female
+                        </label>
+
+                        <label>
+                            <input type="radio"
+                                   name="gender"
+                                   value="Other">
+                            Other
+                        </label>
+                    </div>
+
+                </fieldset>
+
+
+                <!-- 2. Contact Information -->
+                <fieldset id="contact">
+
+                    <legend>2. Contact Information</legend>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email"
+                           name="email"
+                           placeholder="Enter your email"
+                           required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone"
+                           name="phone"
+                           placeholder="Enter your phone number">
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city"
+                           name="city"
+                           placeholder="Enter your city">
+
+                </fieldset>
+
+
+                <!-- 3. Academic Details -->
+                <fieldset>
+
+                    <legend>3. Professional / Academic Details</legend>
+
+                    <label for="institution">
+                        Institution / Organization:
+                    </label>
+
+                    <input type="text" id="institution"
+                           name="institution"
+                           placeholder="Enter institution name">
+
+                    <label for="designation">
+                        Designation:
+                    </label>
+
+                    <input type="text" id="designation"
+                           name="designation"
+                           placeholder="Student / Employee">
+
+                    <label for="study">Area of Study:</label>
+
+                    <select id="study" name="study">
+                        <option value="">Select your area</option>
+                        <option>Computer Science</option>
+                        <option>Information Technology</option>
+                        <option>Business Management</option>
+                        <option>Engineering</option>
+                        <option>Other</option>
+                    </select>
+
+                </fieldset>
+
+
+                <!-- 4. Interests -->
+                <fieldset id="interests">
+
+                    <legend>4. Interests and Skills</legend>
+
+                    <p class="group-label">
+                        Select your areas of interest:
+                    </p>
+
+                    <div class="options">
+
+                        <label>
+                            <input type="checkbox"
+                                   name="interests"
+                                   value="Technology">
+                            Technology
+                        </label>
+
+                        <label>
+                            <input type="checkbox"
+                                   name="interests"
+                                   value="Sports">
+                            Sports
+                        </label>
+
+                        <label>
+                            <input type="checkbox"
+                                   name="interests"
+                                   value="Music">
+                            Music
+                        </label>
+
+                        <label>
+                            <input type="checkbox"
+                                   name="interests"
+                                   value="Photography">
+                            Photography
+                        </label>
+
+                        <label>
+                            <input type="checkbox"
+                                   name="interests"
+                                   value="Travel">
+                            Travelling
+                        </label>
+
+                        <label>
+                            <input type="checkbox"
+                                   name="interests"
+                                   value="Reading">
+                            Reading
+                        </label>
+
+                    </div>
+
+                    <label for="skills">Your Skills:</label>
+
+                    <textarea id="skills" name="skills"
+                              rows="3"
+                              placeholder="Enter your skills"></textarea>
+
+                </fieldset>
+
+
+                <!-- 5. Purpose of Contact -->
+                <fieldset>
+
+                    <legend>5. Purpose of Contact</legend>
+
+                    <label for="purpose">
+                        Why would you like to connect?
+                    </label>
+
+                    <select id="purpose" name="purpose" required>
+
+                        <option value="">Select a purpose</option>
+                        <option>Collaboration</option>
+                        <option>Project Discussion</option>
+                        <option>Networking</option>
+                        <option>General Enquiry</option>
+
+                    </select>
+
+                </fieldset>
+
+
+                <!-- 6. Additional Information -->
+                <fieldset>
+
+                    <legend>6. Additional Information</legend>
+
+                    <label for="message">
+                        Message or Introduction:
+                    </label>
+
+                    <textarea id="message"
+                              name="message"
+                              rows="5"
+                              placeholder="Write something about yourself..."></textarea>
+
+                </fieldset>
+
+
+                <!-- Form Buttons -->
+                <div class="buttons">
+
+                    <button type="submit">
+                        Submit
+                    </button>
+
+                    <button type="reset">
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright © 2026 My Personal Website</p>
+        <p>Designed using HTML5 and CSS3</p>
+    </footer>
+
+</body>
+</html>
